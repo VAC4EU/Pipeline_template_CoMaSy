@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>_index.en on ROC18 Documentation</title>
+    <link>/step_3/index.html</link>
+    <description>Recent content in _index.en on ROC18 Documentation</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Mon, 02 Dec 2024 00:00:00 +0000</lastBuildDate><atom:link href="/step_3/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>D3_cohort_ImmDis</title>
+      <link>/step_3/d3_cohort_immdis/index.html</link>
+      <pubDate>Mon, 02 Dec 2024 00:00:00 +0000</pubDate>
+      <guid>/step_3/d3_cohort_immdis/index.html</guid>
+      <description>MetadataData ModelParametersExample{&#34;x&#34;:{&#34;tag&#34;:{&#34;name&#34;:&#34;Reactable&#34;,&#34;attribs&#34;:{&#34;data&#34;:{&#34;metadata_name&#34;:[&#34;Name of the dataset&#34;,&#34;Content of the dataset&#34;,&#34;Unit of observation&#34;,&#34;Dataset where the list of UoOs is fully listed and with 1 record per UoO&#34;,&#34;How many observations per UoO&#34;,&#34;NxUoO&#34;,&#34;Variables capturing the UoO&#34;,&#34;Primary key&#34;,&#34;Parameters&#34;,null,null,null,null,null,null,null,null,null,null,null],&#34;metadata_content&#34;:[&#34;D3_cohort_{ImmDis}&#34;,&#34;Persons in the source population that have at least a code of {ImmDis} during study period, with selection crieria and date of entrance and start of followup in the cohort of each group of prompts&#34;</description>
+    </item>
+    <item>
+      <title>D5_flowchart_exclusion_criteria_ImmDis</title>
+      <link>/step_3/d5_flowchart_exclusion_criteria_immdis/index.html</link>
+      <pubDate>Mon, 02 Dec 2024 00:00:00 +0000</pubDate>
+      <guid>/step_3/d5_flowchart_exclusion_criteria_immdis/index.html</guid>
+      <description>MetadataData ModelParametersExample{&#34;x&#34;:{&#34;tag&#34;:{&#34;name&#34;:&#34;Reactable&#34;,&#34;attribs&#34;:{&#34;data&#34;:{&#34;metadata_name&#34;:[&#34;Name of the dataset&#34;,&#34;Content of the dataset&#34;,&#34;Unit of observation&#34;,&#34;Dataset where the list of UoOs is fully listed and with 1 record per UoO&#34;,&#34;How many observations per UoO&#34;,&#34;Variables capturing the UoO&#34;,&#34;Primary key&#34;,&#34;Parameters&#34;,null,null,null,null,null,null,null,null,null,null,null,null],&#34;metadata_content&#34;:[&#34;D5_flowchart_exclusion_criteria_ImmDis&#34;,&#34;Flowchart of the exclusion of person in the study population from D4_study_population to the cohort of the specific ImmDis&#34;,&#34;criteria&#34;,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null]},&#34;columns&#34;:[{&#34;id&#34;:&#34;metadata_name&#34;,&#34;name&#34;:&#34;metadata_name&#34;,&#34;type&#34;:&#34;character&#34;},{&#34;id&#34;:&#34;metadata_content&#34;,&#34;name&#34;:&#34;metadata_content&#34;,&#34;type&#34;:&#34;character&#34;}],&#34;sortable&#34;:false,&#34;searchable&#34;:true,&#34;pagination&#34;:false,&#34;highlight&#34;:true,&#34;bordered&#34;:true,&#34;striped&#34;:true,&#34;style&#34;:{&#34;maxWidth&#34;:1800},&#34;height&#34;:&#34;600px&#34;,&#34;dataKey&#34;:&#34;cbc8c702c289f489777377606859547c&#34;},&#34;children&#34;:[]},&#34;class&#34;:&#34;reactR_markup&#34;},&#34;evals&#34;:[],&#34;jsHooks&#34;:[]}{&#34;x&#34;:{&#34;tag&#34;:{&#34;name&#34;:&#34;Reactable&#34;,&#34;attribs&#34;:{&#34;data&#34;:{&#34;VarName&#34;:[&#34;criteria&#34;,&#34;N&#34;,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],&#34;Description&#34;:[null,&#34;frequency of the combination&#34;,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],&#34;Format&#34;:[&#34;binary&#34;,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],&#34;Vocabulary&#34;:[&#34;0 = if all the previous value on the same row are 1 then N refers to this column\r\n1= otherwise&#34;</description>
+    </item>
+    <item>
+      <title>D3_variable</title>
+      <link>/step_3/d3_variable/index.html</link>
+      <pubDate>Mon, 02 Dec 2024 00:00:00 +0000</pubDate>
+      <guid>/step_3/d3_variable/index.html</guid>
+      <description>MetadataData ModelParametersExample{&#34;x&#34;:{&#34;tag&#34;:{&#34;name&#34;:&#34;Reactable&#34;,&#34;attribs&#34;:{&#34;data&#34;:{&#34;medatata_name&#34;:[&#34;Name of the dataset&#34;,&#34;Content of the dataset&#34;,&#34;Unit of observation&#34;,&#34;Dataset where the list of UoOs is fully listed and with 1 record per UoO&#34;,&#34;How many observations per UoO&#34;,&#34;Variables capturing the UoO&#34;,&#34;Primary key&#34;,&#34;Parameters&#34;,null,null,null,null,null,null,null,null,null,null,null,null],&#34;metadata_content&#34;:[&#34;D3_variable&#34;,&#34;contains the outcomes observed in the study population, including negative outcomes but excluding covid&#34;,&#34;a person in the study population D4_study_population&#34;,&#34;D4_study_population&#34;,&#34;as many as the observed outcomes, starting 365 days before study_entry_date, = 0&#34;</description>
+    </item>
+    <item>
+      <title>D3_TD_condition</title>
+      <link>/step_3/d3_td_condition/index.html</link>
+      <pubDate>Mon, 02 Dec 2024 00:00:00 +0000</pubDate>
+      <guid>/step_3/d3_td_condition/index.html</guid>
+      <description>MetadataData ModelParametersExamples{&#34;x&#34;:{&#34;tag&#34;:{&#34;name&#34;:&#34;Reactable&#34;,&#34;attribs&#34;:{&#34;data&#34;:{&#34;medatata_name&#34;:[&#34;Name of the dataset&#34;,&#34;Content of the dataset&#34;,&#34;Unit of observation&#34;,&#34;Dataset where the list of UoOs is fully listed and with 1 record per UoO&#34;,&#34;How many observations per UoO&#34;,&#34;Variables capturing the UoO&#34;,&#34;Primary key&#34;,&#34;Parameters&#34;,null,null,null,null,null,null,null,null,null,null,null,null],&#34;metadata_content&#34;:[&#34;D3_TD_condition&#34;,&#34;contains the time-dependent evolution of the binary variable condition. Only changes of status are recorded, with date when the condition changes; the components of the condition last 365 days if they are diagnosis, and 90 days if they are drug proxies; unique spells are created when the algorithm is 1 (if either a dianosis or a drug proxy is active), and the algorithm is reverted to values 0 whenever no component is active&#34;</description>
+    </item>
+  </channel>
+</rss>
