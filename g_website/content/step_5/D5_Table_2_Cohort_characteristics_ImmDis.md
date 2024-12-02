@@ -3,10 +3,10 @@ weight: 2
 name_excel: "D5_Table_2_Cohort_characteristics_ImmDis.xlsx"
 description: ""
 slug: "D5_Table_2_Cohort_characteristics_ImmDis"
-datetime: 1.7319455e+09
+datetime: 1.7331523e+09
 title: D5_Table_2_Cohort_characteristics_ImmDis
 author: ''
-date: '2024-11-18'
+date: '2024-12-02'
 categories: []
 tags: []
 archetype: codebook

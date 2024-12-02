@@ -3,7 +3,7 @@ weight: 2
 name_excel: "D5_flowchart_exclusion_criteria.xlsx"
 description: "Flowchart of the exclusion of PERSONS from D3_PERSONS to the study population"
 slug: "D5_flowchart_exclusion_criteria"
-datetime: 1.7331512e+09
+datetime: 1.7331523e+09
 title: D5_flowchart_exclusion_criteria
 author: ''
 date: '2024-12-02'

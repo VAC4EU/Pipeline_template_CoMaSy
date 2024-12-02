@@ -3,7 +3,7 @@ weight: 3
 name_excel: "D3_variable.xlsx"
 description: "contains the outcomes observed in the study population, including negative outcomes but excluding covid"
 slug: "D3_variable"
-datetime: 1.7331487e+09
+datetime: 1.7331523e+09
 title: D3_variable
 author: ''
 date: '2024-12-02'

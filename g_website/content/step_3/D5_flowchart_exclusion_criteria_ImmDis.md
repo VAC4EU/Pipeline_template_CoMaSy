@@ -3,7 +3,7 @@ weight: 2
 name_excel: "D5_flowchart_exclusion_criteria_ImmDis.xlsx"
 description: "Flowchart of the exclusion of person in the study population from D4_study_population to the cohort of the specific ImmDis"
 slug: "D5_flowchart_exclusion_criteria_ImmDis"
-datetime: 1.7331512e+09
+datetime: 1.7331523e+09
 title: D5_flowchart_exclusion_criteria_ImmDis
 author: ''
 date: '2024-12-02'
