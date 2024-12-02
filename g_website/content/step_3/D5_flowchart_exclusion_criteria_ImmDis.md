@@ -1,9 +1,9 @@
 ---
 weight: 2
 name_excel: "D5_flowchart_exclusion_criteria_ImmDis.xlsx"
-description: "Flowchart of the exclusion of person in the study population from D4_study_population to the cohort of the specific ImmDis"
+description: ""
 slug: "D5_flowchart_exclusion_criteria_ImmDis"
-datetime: 1.7331523e+09
+datetime: 1.7331527e+09
 title: D5_flowchart_exclusion_criteria_ImmDis
 author: ''
 date: '2024-12-02'
@@ -28,7 +28,7 @@ output: html_document
 </div>
 <div id="Metadata" class="tabcontent">
 <div id="htmlwidget-1" class="reactable html-widget" style="width:auto;height:600px;"></div>
-<script type="application/json" data-for="htmlwidget-1">{"x":{"tag":{"name":"Reactable","attribs":{"data":{"medatata_name":["Name of the dataset","Content of the dataset","Unit of observation","Dataset where the list of UoOs is fully listed and with 1 record per UoO","How many observations per UoO","Variables capturing the UoO","Primary key","Parameters",null,null,null,null,null,null,null,null,null,null,null,null],"metadata_content":["D5_flowchart_exclusion_criteria_ImmDis","Flowchart of the exclusion of person in the study population from D4_study_population to the cohort of the specific ImmDis","criteria",null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null]},"columns":[{"id":"medatata_name","name":"medatata_name","type":"character"},{"id":"metadata_content","name":"metadata_content","type":"character"}],"sortable":false,"searchable":true,"pagination":false,"highlight":true,"bordered":true,"striped":true,"style":{"maxWidth":1800},"height":"600px","dataKey":"ed047b209d2e0ed15d7c5adc330c8456"},"children":[]},"class":"reactR_markup"},"evals":[],"jsHooks":[]}</script>
+<script type="application/json" data-for="htmlwidget-1">{"x":{"tag":{"name":"Reactable","attribs":{"data":{"metadata_name":["Name of the dataset","Content of the dataset","Unit of observation","Dataset where the list of UoOs is fully listed and with 1 record per UoO","How many observations per UoO","Variables capturing the UoO","Primary key","Parameters",null,null,null,null,null,null,null,null,null,null,null,null],"metadata_content":["D5_flowchart_exclusion_criteria_ImmDis","Flowchart of the exclusion of person in the study population from D4_study_population to the cohort of the specific ImmDis","criteria",null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null]},"columns":[{"id":"metadata_name","name":"metadata_name","type":"character"},{"id":"metadata_content","name":"metadata_content","type":"character"}],"sortable":false,"searchable":true,"pagination":false,"highlight":true,"bordered":true,"striped":true,"style":{"maxWidth":1800},"height":"600px","dataKey":"cbc8c702c289f489777377606859547c"},"children":[]},"class":"reactR_markup"},"evals":[],"jsHooks":[]}</script>
 </div>
 <div id="Data Model" class="tabcontent">
 <div id="htmlwidget-2" class="reactable html-widget" style="width:auto;height:600px;"></div>
