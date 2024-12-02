@@ -1,10 +1,10 @@
 ---
-weight: 1
-name_excel: "D3_cohort_ImmDis.xlsx"
+weight: 3
+name_excel: "D3_outcomes.xlsx"
 description: "`r get_description(rmarkdown::metadata$name_excel)`"
-slug: "D3_cohort_ImmDis"
-datetime: 1.7331512e+09
-title: D3_cohort_ImmDis
+slug: "D3_outcomes"
+datetime: 1.733148e+09
+title: D3_outcomes
 author: ''
 date: '2024-12-02'
 categories: []

@@ -1,10 +1,10 @@
 ---
-weight: 1
-name_excel: "D3_cohort_ImmDis.xlsx"
+weight: 2
+name_excel: "D5_flowchart_exclusion_criteria_ImmDis.xlsx"
 description: "`r get_description(rmarkdown::metadata$name_excel)`"
-slug: "D3_cohort_ImmDis"
+slug: "D5_flowchart_exclusion_criteria_ImmDis"
 datetime: 1.7331512e+09
-title: D3_cohort_ImmDis
+title: D5_flowchart_exclusion_criteria_ImmDis
 author: ''
 date: '2024-12-02'
 categories: []
