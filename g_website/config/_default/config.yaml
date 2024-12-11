@@ -1,5 +1,5 @@
 publishDir: '../docs'
-baseURL: https://vac4eu.github.io/ROC18/
+baseURL: https://vac4eu.github.io/Pipeline_template_CoMaSy/
 canonifyURLs: yes
 relativeURLs: yes
 uglyURLs: no
@@ -9,7 +9,7 @@ defaultContentLanguage: en
 ignoreFiles: ["\\.Rmd$", "\\.Rmarkdown$", "_cache$", "\\.knit\\.md$", "\\.utf8\\.md$"]
 permalinks:
   data-models: /:slug/
-title: ROC18 Documentation
+title: CoMaSy pilot
 outputs:
   home:
     - HTML
@@ -45,19 +45,19 @@ languages:
       shortcuts:
         - identifier: diagram 
           name: <i class='fas fa-project-diagram'></i> Diagram
-          url: https://vac4eu.github.io/ROC18/diagram.html
+          url: https://vac4eu.github.io/Pipeline_template_CoMaSy/diagram.html
           weight: 10
         - identifier: diagram draft
           name: <i class='fas fa-project-diagram'></i> Diagram
-          url: https://vac4eu.github.io/ROC18/diagram_draft.html
+          url: https://vac4eu.github.io/Pipeline_template_CoMaSy/diagram_draft.html
           weight: 10
         - identifier: ds
           name: <i class='fab fa-fw fa-github'></i> GitHub repo
-          url: https://github.com/VAC4EU/ROC18
+          url: https://github.com/VAC4EU/Pipeline_template_CoMaSy
           weight: 11
         - identifier: link_script
           name: <i class='fas fa-link'></i> Related scripts
-          url: https://github.com/VAC4EU/ROC18/wiki/
+          url: https://github.com/VAC4EU/Pipeline_template_CoMaSy/wiki/
           weight: 12
         - identifier: vac4eu
           name: <i class='fas fa-fw fa-syringe'></i> VAC4EU
@@ -65,7 +65,7 @@ languages:
           weight: 13
     params:
       landingPageName: <i class='fas fa-home'></i> Home
-    title: ROC18 Documentation
+    title: CoMaSy pilot
     weight: 1
   pir:
     languageName: Arrr! ☠ Pirrrates ☠
@@ -73,7 +73,7 @@ languages:
       shortcuts:
         - identifier: ds
           name: <i class='fab fa-fw fa-github'></i> GitHub repo
-          url: https://github.com/VAC4EU/CVM
+          url: https://github.com/VAC4EU/Pipeline_template_CoMaSy
           weight: 10
         - identifier: test
           name: <i class='fas fa-fw fa-syringe'></i> VAC4EU
@@ -118,10 +118,10 @@ module:
       target: static
 params:
 #   additionalContentLanguage: en
-  author: ARS Tuscany
+  author: VAC4EU
   breadcrumbSeparator: '>'
   collapsibleMenu: yes
-  description: ROC18 Documentation
+  description: CoMaSy pilot
   disableAssetsBusting: yes
   disableBreadcrumb: no
   disableInlineCopyToClipBoard: yes
