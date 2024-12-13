@@ -10,4 +10,4 @@ source(here::here("schema and pipeline.R"))
 
 source(here::here("original schema.R"))
 
-all.equal(CoMaSy_schema, original_schema)
+identical(CoMaSy_schema, original_schema)
