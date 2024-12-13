@@ -9,14 +9,14 @@ CoMaSy_schema[["authors"]] <- "Rosa Gini, Davi Messina, Estel Plana, Brianna Goo
 main_pipeline_properties <- list()
 main_pipeline_properties[["inceptionDatabase"]] <- inceptionDatabase
 main_pipeline_properties[["steps"]] <- steps
-main_pipeline_properties[["codebooks"]] <- list()
-main_pipeline_properties[["indexFile"]] <- list()
-main_pipeline_properties[["variables"]] <- list()
-main_pipeline_properties[["parameters"]] <- list()
-main_pipeline_properties[["configurationFiles"]] <- list()
-main_pipeline_properties[["dag"]] <- list()
+main_pipeline_properties[["codebooks"]] <- codebooks
+main_pipeline_properties[["indexFile"]] <- indexFile
+main_pipeline_properties[["variables"]] <- variables
+main_pipeline_properties[["parameters"]] <- parameters
+main_pipeline_properties[["configurationFiles"]] <- configurationFiles
+main_pipeline_properties[["dag"]] <- dag
 
-rm(inceptionDatabase, steps)
+rm(inceptionDatabase, steps, codebooks, indexFile, variables, parameters, configurationFiles, dag)
 
 main_pipeline <- list()
 main_pipeline[["type"]] <- "object"

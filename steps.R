@@ -7,7 +7,7 @@ input_properties[["codebooks"]][["items"]][["type"]] <- "string"
 steps_items_properties <- list()
 steps_items_properties[["name"]][["type"]] <- "string"
 steps_items_properties[["partialOrdering"]][["type"]] <- "string"
-steps_items_properties[["input"]][["type"]] <- "string"
+steps_items_properties[["input"]][["type"]] <- "object"
 steps_items_properties[["input"]][["properties"]] <- input_properties
 steps_items_properties[["output"]][["type"]] <- "array"
 steps_items_properties[["output"]][["items"]][["type"]] <- "string"

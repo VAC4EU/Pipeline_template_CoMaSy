@@ -7,6 +7,7 @@ dataModel_items_properties <- list()
 dataModel_items_properties[["flow_id"]][["type"]] <- "string"
 dataModel_items_properties[["database"]][["type"]] <- "string"
 dataModel_items_properties[["file_name"]][["type"]] <- "string"
+dataModel_items_properties[["description"]][["type"]] <- "string"
 dataModel_items_properties[["admissibleValues"]] <- dataModel_items_properties_admissibleValues
 dataModel_items_properties[["comments"]][["type"]] <- "string"
 rm(dataModel_items_properties_admissibleValues)
@@ -26,12 +27,15 @@ inception_db_items_properties <- list()
 inception_db_items_properties[["name"]][["type"]] <- "string"
 inception_db_items_properties[["description"]][["type"]] <- "string"
 inception_db_items_properties[["dataModel"]] <- dataModel
+rm(dataModel)
 
 inception_db_items <- list()
 inception_db_items[["type"]] <- "object"
 inception_db_items[["properties"]] <- inception_db_items_properties
 inception_db_items[["required"]] <- c("name", "description", "dataModel")
+rm(inception_db_items_properties)
 
 inceptionDatabase <- list()
 inceptionDatabase[["type"]] <- "array"
 inceptionDatabase[["items"]] <- inception_db_items
+rm(inception_db_items)
