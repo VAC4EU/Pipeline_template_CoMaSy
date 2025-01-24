@@ -41,7 +41,6 @@ parameters_items[["properties"]] <- parameters_properties
 rm(parameters_properties)
 
 examples_properties <- list()
-# TODO check JSON specification for dataset
 examples_properties[["inputDataset"]][["type"]] <- "string"
 examples_properties[["outputDataset"]][["type"]] <- "string"
 
