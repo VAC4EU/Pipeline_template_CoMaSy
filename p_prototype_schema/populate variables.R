@@ -13,19 +13,23 @@ test[, flag := data.table::rowid(Varname) == 1]
 test[ , i := .GRP, by = "Varname"]
 test[i == 1, ]
 
+add_variable <- function(x, test) {
+
 variables_properties <- list()
 variables_properties[["identifier"]] <- x
-variables_properties[["name"]][["type"]] <- unique(test[i == x, Varname])
-variables_properties[["generatingCodebook"]][["type"]] <- test[i == x & flag, codebook]
+variables_properties[["name"]] <- unique(test[i == x, Varname])
+variables_properties[["generatingCodebook"]] <- test[i == x & flag, codebook]
 variables_properties[["codebooksList"]] <- as.list(test[i == x, codebook])
-# TODO to add?
 variables_properties[["flowId"]] <- ""
 
 variables_items <- list()
 variables_items[["properties"]] <- variables_properties
 variables_items[["required"]] <- c("identifier", "name", "generatingCodebook")
-rm(variables_properties)
+
+return(variables_items)
+
+}
 
 variables <- list()
-variables[["items"]] <- variables_items
-rm(variables_items)
+variables[["items"]] <- lapply(1:max(test[, i]), add_variable, test)
+rm(test)
