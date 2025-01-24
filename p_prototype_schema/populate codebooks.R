@@ -5,7 +5,8 @@ add_dm_properties <- function(x, real_cb_datamodel) {
   dataModel_properties[["description"]] <- real_cb_datamodel[x, Description] # string
   dataModel_properties[["format"]] <- real_cb_datamodel[x, Format] # string
   dataModel_properties[["vocabulary"]] <- real_cb_datamodel[x, Vocabulary] # string
-  dataModel_properties[["notes"]] <- real_cb_datamodel[x, Notes.and.examples] # string
+  print(colnames(real_cb_datamodel))
+  dataModel_properties[["notes"]] <- real_cb_datamodel[x, Description./.Notes] # string
   
   dataModel_items <- list()
   dataModel_items[["properties"]] <- dataModel_properties
@@ -41,10 +42,10 @@ add_stav_properties <- function(x, real_cb_datamodel) {
 add_parameters_properties <- function(x, real_cb_parameters, real_cb_datamodel) {
   
   parameters_properties <- list()
-  parameters_properties[["name"]] <- real_cb_parameters[x, parameter.in.the.variable.name] # string
+  parameters_properties[["name"]] <- real_cb_parameters[x, parameter_in_program] # string
   # TODO change string to array 
   parameters_properties[["parameterVariable"]] <- as.list(real_cb_datamodel[real_cb_datamodel[, Parameters] %in% parameters_properties[["name"]], Varname]) # string
-  parameters_properties[["values"]][["items"]] <- real_cb_parameters[x, values] # string
+  parameters_properties[["values"]][["items"]] <- real_cb_parameters[x, value] # string
   # TODO ask name of macro
   parameters_properties[["configFile"]] <- "" # string
   
