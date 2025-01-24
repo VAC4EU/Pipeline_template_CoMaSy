@@ -41,8 +41,11 @@ parameters_items[["properties"]] <- parameters_properties
 rm(parameters_properties)
 
 examples_properties <- list()
+# TODO check JSON specification for dataset
 examples_properties[["inputDataset"]][["type"]] <- "string"
 examples_properties[["outputDataset"]][["type"]] <- "string"
+
+examples_properties[["parameters"]] <- "array"
 
 examples_items <- list()
 examples_items[["type"]] <- "object"
@@ -74,6 +77,7 @@ codebooks_items_properties[["name"]][["pattern"]] <- "^D[2-6]_.*"
 codebooks_items_properties[["generatorStep"]][["type"]] <- "string"
 codebooks_items_properties[["metadata"]][["type"]] <- "object"
 codebooks_items_properties[["metadata"]][["properties"]] <- metadata_properties
+# TODO check if exist sheet in excel for shell table
 codebooks_items_properties[["shellTable"]][["type"]] <- "boolean"
 rm(metadata_properties)
 

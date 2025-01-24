@@ -20,7 +20,8 @@ add_dm_properties <- function(x, real_cb_datamodel) {
 add_stav_properties <- function(x, real_cb_datamodel) {
   
   sourceTablesAndVariables_properties <- list()
-  # TODO how to retrieve?
+  # TODO add Varname as key
+  # TODO how to retrieve? PERSONS/day_of_birth, PERSONS/month_of_birth, PERSONS/year_of_birth
   sourceTablesAndVariables_properties[["tableName"]] <- "tablename" # string
   sourceTablesAndVariables_properties[["variables"]][["items"]] <- "variables" # string
   sourceTablesAndVariables_properties[["retrieved"]] <- real_cb_datamodel[x, Retrieved] # boolean
