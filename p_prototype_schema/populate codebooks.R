@@ -71,7 +71,15 @@ add_examples_properties <- function(example_dfs) {
 
 # add_examples_properties(ori_file, inputDataset, outputDataset)
 
-add_codebook <- function(index_file, real_cb_example, real_cb_parameters, real_cb_datamodel, real_cb_metadata, example_dfs) {
+add_codebook <- function(wb, example_dfs) {
+  
+  sheets_name <- openxlsx2::wb_get_sheet_names(wb)
+  
+  real_cb_example <- data.table::data.table(xlsx::read.xlsx(excel_file, sheetIndex = 4))
+  real_cb_parameters <- data.table::data.table(openxlsx2::read_xlsx(excel_file, sheet = 3, check_names = T))
+  real_cb_datamodel <- data.table::data.table(xlsx::read.xlsx(excel_file, sheetIndex = 2))
+  real_cb_metadata <- data.table::data.table(xlsx::read.xlsx(excel_file, sheetIndex = 1))
+  index_file <- data.table::data.table(xlsx::read.xlsx(here::here("i_codebooks/00_index.xlsx"), sheetIndex = 1))
   
   metadata_properties <- list()
   metadata_properties[["description"]] <- real_cb_metadata[medatata_name == "Content of the dataset", metadata_content] # string
@@ -94,14 +102,12 @@ add_codebook <- function(index_file, real_cb_example, real_cb_parameters, real_c
   
   codebooks_items_properties <- list()
   codebooks_items_properties[["name"]] <- real_cb_metadata[medatata_name == "Name of the dataset", metadata_content] # string
-  # TODO
   codebooks_items_properties[["name"]][["pattern"]] <- "^D[2-6]_.*"
   
   index_file_filtered <- index_file[dataset_name == codebooks_items_properties[["name"]][[1]], ]
   codebooks_items_properties[["generatorStep"]] <- index_file_filtered[, step_producing_this_dataset] # string
   codebooks_items_properties[["metadata"]][["properties"]] <- metadata_properties # object
-  # TODO
-  codebooks_items_properties[["shellTable"]] <- "" # boolean
+  codebooks_items_properties[["shellTable"]] <- any(grepl("shell table", sheets_name)) # boolean
   rm(metadata_properties)
   
   codebooks_items <- list()
@@ -144,15 +150,11 @@ all_codebooks <- setdiff(list.files(here::here("i_codebooks")), "00_index.xlsx")
 all_codebooks <- all_codebooks[!grepl("^~", all_codebooks)]
 
 codebooks <- lapply(all_codebooks, function(x) {
-  excel_file <- here::here("i_codebooks", all_codebooks[1])
+  excel_file <- here::here("i_codebooks", x)
   
   print(x)
   
-  real_cb_example <- data.table::data.table(xlsx::read.xlsx(excel_file, sheetIndex = 4))
-  real_cb_parameters <- data.table::data.table(openxlsx2::read_xlsx(excel_file, sheet = 3, check_names = T))
-  real_cb_datamodel <- data.table::data.table(xlsx::read.xlsx(excel_file, sheetIndex = 2))
-  real_cb_metadata <- data.table::data.table(xlsx::read.xlsx(excel_file, sheetIndex = 1))
-  index_file <- data.table::data.table(xlsx::read.xlsx(here::here("i_codebooks/00_index.xlsx"), sheetIndex = 1))
+  wb <- openxlsx2::wb_load(excel_file)
   
-  add_codebook(index_file, real_cb_example, real_cb_parameters, real_cb_datamodel, real_cb_metadata, example_dfs)
+  add_codebook(wb, example_dfs)
 })
