@@ -16,7 +16,7 @@ add_index_row <- function(name, inputs, outputs) {
   return(index_steps)
 }
 
-index <- data.table::data.table(xlsx::read.xlsx("i_codebooks/00_index.xlsx", sheetIndex = 1))
+index <- data.table::data.table(xlsx::read.xlsx(here::here("i_codebooks/00_index.xlsx"), sheetIndex = 1))
 index <- unique(index[, .(step_producing_this_dataset, input_datasets_for_the_step, dataset_name)])
 
 # Check if each step has a single input_datasets_for_the_step
