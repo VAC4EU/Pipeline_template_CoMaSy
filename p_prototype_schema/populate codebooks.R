@@ -119,6 +119,7 @@ add_codebook <- function(index_file, real_cb_example, real_cb_parameters, real_c
   
 }
 
+# TODO may have more than 1 example in different sheet
 is_empty_row <- data.table::data.table(openxlsx2::wb_load(here::here("i_codebooks/D3_TD_condition.xlsx")) %>%
   openxlsx2::wb_to_df(col_names = F, sheet = "Examples"))
 is_empty_row <- data.table::data.table(!is.na(is_empty_row[, 1]))
